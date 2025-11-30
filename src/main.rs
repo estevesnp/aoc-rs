@@ -115,8 +115,8 @@ struct Cli {
 }
 
 pub trait Day {
-    fn part_1(&self) -> Result<i64, String>;
-    fn part_2(&self) -> Result<i64, String>;
+    fn part_1(&self) -> Result<usize, String>;
+    fn part_2(&self) -> Result<usize, String>;
     fn run(&self, part: Part) -> Result<(), String> {
         match part {
             Part::One => {

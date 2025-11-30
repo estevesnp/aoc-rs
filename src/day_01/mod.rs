@@ -5,11 +5,11 @@ use crate::Day;
 
 struct DayImpl;
 impl Day for DayImpl {
-    fn part_1(&self) -> Result<i64, String> {
+    fn part_1(&self) -> Result<usize, String> {
         part_1::run()
     }
 
-    fn part_2(&self) -> Result<i64, String> {
+    fn part_2(&self) -> Result<usize, String> {
         part_2::run()
     }
 }

@@ -11,7 +11,7 @@ fn main() -> Result<(), String> {
     if let Action::Add = cli.action {
         let day = match cli.day {
             Some(d) => d,
-            None => highest_day()?.unwrap_or(1),
+            None => highest_day()?.unwrap_or(0) + 1,
         };
         return add(day);
     }

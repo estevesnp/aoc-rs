@@ -4,6 +4,7 @@ use std::path::Path;
 use clap::{Parser, ValueEnum};
 
 mod day_01;
+mod day_02;
 
 fn main() -> Result<(), String> {
     let cli = Cli::parse();
@@ -25,6 +26,7 @@ fn main() -> Result<(), String> {
 
     match day {
         1 => day_01::runner().run(cli.part)?,
+        2 => day_02::runner().run(cli.part)?,
         _ => panic!("day {} not implemented", day),
     };
 

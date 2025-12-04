@@ -1,6 +1,6 @@
 # aoc rs
 
-scaffolding for easily running and adding new AOC challenge implementations
+implementation and scaffolding for easily running and adding new AOC challenge implementations
 
 ## run AOC day
 
